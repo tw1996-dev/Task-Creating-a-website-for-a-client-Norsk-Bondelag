@@ -1,0 +1,40 @@
+/* GLOBAL STYLES */
+html {
+   box-sizing: border-box;
+    font-family: Open Sans, sans-serif;
+}
+
+    /* font-family: Helvetica Neue, */
+
+*,
+*:before,
+*:after {
+   box-sizing: inherit;
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+   letter-spacing: 0.4px;
+   margin: 0;
+   padding: 0;
+}
+
+ul {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+}
+
+/* HEADER STYLES */
+
+.header {
+    background-color: #ffdc00;
+    color: #594a25;
+    }
+
+.nav-link {
+    color: #594a25;
+    background-color: transparent;
+    font-weight: 400;
+    line-height: 2rem;
+    font-size: 20px;
+    }
