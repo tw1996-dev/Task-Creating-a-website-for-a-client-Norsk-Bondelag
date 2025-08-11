@@ -22,8 +22,15 @@
 
         <div class="header-container">
             <div class="logo">
-                <img src="images/header-icon.webp" alt="Norges Bondelag logo" class="header-icon">
-                <h1 class="header-h1"><span class="header-span">NORGES</span><br>BONDELAG</h1>
+                <a class="header-link"><img src="images/header-icon.webp" alt="Norges Bondelag logo"
+                        class="header-icon"></a>
+                <a class="header-link" href="">
+                    <h1 class="header-h1"><span class="header-span">NORGES</span><br>BONDELAG</h1>
+                </a>
+
+
+
+
             </div>
 
 
@@ -31,18 +38,25 @@
             <nav class="main-nav">
                 <ul class="nav-list">
                     <li class="nav-item"><a href="#" class="nav-link">Bondelaget mener</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">For bonden</a></li>
+                    <!-- <li class="nav-item"><a href="#" class="nav-link">For bonden</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Fylkeslag</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Jus og økonomi</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Jus og økonomi</a></li> -->
                     <li class="nav-item"><a href="#" class="nav-link">Kontakt</a></li>
-                    <li class="nav-item6"><a href="#" class="nav-link">Bli medlem</a></li>
-                    <li class="nav-item7"><a href="#" class="nav-link"><button class="login-btn">Logg inn</button></a>
+                    <li class="nav-item nav-item-auth">
+                        <a href="#" class="nav-link login-btn">Logg inn</a>
+                        <a href="#" class="nav-link">Bli medlem</a>
                     </li>
-                    <li nav-item><button class="search-btn">
+                    <li class="nav-item"><button class="search-btn">
                             <span id="search-icon" class="material-symbols-outlined">search</span>
                         </button></li>
                 </ul>
-            </nav>
+                <button class="hamburger-btn">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+
+        </div>
 
 
     </header>
@@ -55,7 +69,7 @@
                     srcset="images/1_320px.webp 320w, images/1_640px.webp 640w, images/1_960px.webp 960w, images/1_1200px.webp 1200w"
                     sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 400px"
                     alt="Arendalsuka event in city center with flag and church visible"
-                    aria-label="Arendalsuka political event taking place in town center">
+                    aria-label="Arendalsuka political event taking place in town center" class="hero-img">
                 <h2 class="hero-title">
                     <a href="" class="hero-link">Snart finner du oss på Arendalsuka!</a>
                 </h2>
@@ -69,7 +83,7 @@
                     srcset="images/2_320px.webp 320w, images/2_640px.webp 640w, images/2_960px.webp 960w, images/2_1200px.webp 1200w"
                     sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 400px"
                     alt="Red barn with children playing in hay"
-                    aria-label="Children enjoying farm activities in traditional red Norwegian barn">
+                    aria-label="Children enjoying farm activities in traditional red Norwegian barn" class="hero-img">
                 <h2 class="hero-title">
                     <a href="" class="hero-link">Besøk en Åpen Gård i august</a>
                 </h2>
@@ -82,7 +96,8 @@
                     srcset="images/3_320px.webp 320w, images/3_640px.webp 640w, images/3_960px.webp 960w, images/3_1200px.webp 1200w"
                     sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 400px"
                     alt="People standing at trade fair exhibition booth"
-                    aria-label="Visitors and exhibitors at Norwegian agricultural trade fair">
+                    aria-label="Visitors and exhibitors at Norwegian agricultural trade fair"
+                    class="hero-img  hero-img2">
                 <h2 class="hero-title">
                     <a href="" class="hero-link">20 år med Oi! Trøndersk Matfestival</a>
                 </h2>
@@ -96,7 +111,7 @@
                     srcset="images/4_320px.webp 320w, images/4_640px.webp 640w, images/4_960px.webp 960w, images/4_1200px.webp 1200w"
                     sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 400px"
                     alt="Well-dressed man with buildings in background"
-                    aria-label="Business professional standing in front of modern buildings">
+                    aria-label="Business professional standing in front of modern buildings" class="hero-img hero-img2">
                 <h2 class="hero-title">
                     <a href="" class="hero-link">Ber regjeringen holde landbruket unna forhandlingene med USA</a>
                 </h2>
@@ -110,7 +125,8 @@
                     srcset="images/5_320px.webp 320w, images/5_640px.webp 640w, images/5_960px.webp 960w, images/5_1200px.webp 1200w"
                     sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 400px"
                     alt="People holding picture or painting"
-                    aria-label="Group of people presenting cultural landscape award with artwork">
+                    aria-label="Group of people presenting cultural landscape award with artwork"
+                    class="hero-img hero-img2">
                 <h2 class="hero-title">
                     <a href="" class="hero-link">Nasjonal kulturlandskapsris til Sunndal</a>
                 </h2>
@@ -120,27 +136,40 @@
             </article>
 
         </div>
-        <button class="hero-btn">Se eldre nyheter</button>
+        <div class="hero-btn-container"><button class="hero-btn">Se eldre nyheter</button></div>
+
     </section>
 
     <section class="buttons">
-        <div buttons-container>
+        <div class="buttons-container">
             <ul>
-                <li><a href=""><span class="material-symbols-outlined">
-                            account_circle
-                        </span></a></li>
+                <li>
+                    <a href="">
+                        <span class="material-symbols-outlined">account_circle</span>
+                        <h3>Bli medlem</h3>
+                    </a>
+                </li>
 
-                <li><a href=""><span class="material-symbols-outlined">
-                            login
-                        </span></a></li>
+                <li>
+                    <a href="">
+                        <span class="material-symbols-outlined">login</span>
+                        <h3>Logg inn på min side</h3>
+                    </a>
+                </li>
 
-                <li><a href=""><span class="material-symbols-outlined">
-                            groups_3
-                        </span></a></li>
+                <li>
+                    <a href="">
+                        <span class="material-symbols-outlined">groups_3</span>
+                        <h3>For lokallag og tillitsvalgte</h3>
+                    </a>
+                </li>
 
-                <li><a href=""><span class="material-symbols-outlined">
-                            shopping_basket
-                        </span></a></li>
+                <li>
+                    <a href="">
+                        <span class="material-symbols-outlined">shopping_basket</span>
+                        <h3>Nettbutikk</h3>
+                    </a>
+                </li>
             </ul>
         </div>
     </section>
