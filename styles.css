@@ -426,6 +426,7 @@ width: 80%;
     gap: 8px;
     transition: all 0.3s ease;
     margin: 20px auto 0;
+    max-width: 266px;
 }
 
 .hero-btn::after {
@@ -760,6 +761,7 @@ width: 80%;
     transition: all 0.3s ease;
     margin: 20px auto 0;
     border: solid 2px transparent;
+    max-width: 266px;
 }
 
 .events-btn::after {
@@ -1423,4 +1425,10 @@ padding-right: 15px;
     .dropdown-search {
         display: none;
     }
+}
+
+
+/* FOR w3 html VALIDATION */
+.sr-only {
+    display: none;
 }
