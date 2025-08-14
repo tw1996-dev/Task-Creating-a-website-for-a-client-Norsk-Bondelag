@@ -113,6 +113,21 @@ function initializeCustomDropdown() {
     const selectedText = dropdown.querySelector('.selected-text');
     const searchInput = dropdown.querySelector('.search-input-dropdown');
     const options = dropdown.querySelectorAll('.dropdown-option');
+
+    // Detect mobile device
+    const isMobile = window.innerWidth <= 768 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+    // Disable focus on mobile
+    if (isMobile && searchInput) {
+        searchInput.addEventListener('focus', function(e) {
+            e.preventDefault();
+            e.target.blur();
+        });
+        
+        searchInput.addEventListener('touchstart', function(e) {
+            e.preventDefault();
+        });
+    }
     
     // URL mapping for fylkeslag
     const fylkeslagUrls = {

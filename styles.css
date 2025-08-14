@@ -1417,3 +1417,10 @@ padding-right: 15px;
 .options-list::-webkit-scrollbar-thumb:hover {
     background: rgba(255, 220, 0, 0.8);
 }
+
+/* Hide search on mobile */
+@media (max-width: 768px) {
+    .dropdown-search {
+        display: none;
+    }
+}
