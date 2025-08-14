@@ -243,14 +243,14 @@ width: 80%;
         top: 0;
         left: 0;
         right: 0;
-        z-index: 9998;
+        z-index: 300;
     }
         .search-dropdown {
         position: fixed;
         top: 90px; /* Height of mobile header */
         left: 0;
         right: 0;
-        z-index: 9997; /* Just below header */
+        z-index: 299; /* Just below header */
         background-color: #9b927c;
         max-height: 0;
         overflow: hidden;
@@ -261,7 +261,7 @@ width: 80%;
         position: fixed !important;
         top: 40px !important;
         right: 45px !important;
-        z-index: 10000 !important;
+        z-index: 301 !important;
     }
     
     /* Hamburger to X animation */
@@ -284,7 +284,7 @@ width: 80%;
         width: 100vw;
         height: 100vh;
         background-color: #ffdc00;
-        z-index: 9999;
+        z-index: 500;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1344,12 +1344,12 @@ padding-right: 15px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
-    z-index: 12345;
+    z-index: 499;
 }
 
 .custom-dropdown.open .dropdown-options {
     max-height: calc(100vh - 120px);
-    z-index: 12345;
+    z-index: 499;
 }
 
 .dropdown-search {
