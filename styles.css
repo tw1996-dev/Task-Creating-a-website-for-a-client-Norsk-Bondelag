@@ -1349,6 +1349,7 @@ padding-right: 15px;
 
 .custom-dropdown.open .dropdown-options {
     max-height: calc(100vh - 120px);
+    z-index: 12345;
 }
 
 .dropdown-search {
